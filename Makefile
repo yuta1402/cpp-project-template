@@ -9,7 +9,7 @@ DEPENDS = $(OBJS:.o=.d)
 
 CXX_DEBUG_FLAGS = -g -O0
 CXX_RELEASE_FLAGS = -O3
-CXXFLAGS = -std=c++1z -pthread -MMD -MP
+CXXFLAGS = -std=c++1z -stdlib=libc++ -pthread -MMD -MP
 
 all: $(TARGET)
 
