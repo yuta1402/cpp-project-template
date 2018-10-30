@@ -1,7 +1,11 @@
 #include <iostream>
+#include "hs/hello.hpp"
 
-int main(int argc, char* argv[])
+int main()
 {
-    std::cout << "Hello, world" << std::endl;
+    hs::Hello h;
+
+    h.hello();
+
     return 0;
 }
