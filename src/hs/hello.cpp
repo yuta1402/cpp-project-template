@@ -7,4 +7,9 @@ namespace hs
     {
         std::cout << "Hello, world" << std::endl;
     }
+
+    std::string Hello::getHello() const
+    {
+        return "Hello, world";
+    }
 }

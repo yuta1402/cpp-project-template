@@ -1,6 +1,8 @@
 #ifndef HELLO_HPP
 #define HELLO_HPP
 
+#include <string>
+
 /*!
 @namespace hs
 @brief Hello subprograms
@@ -14,6 +16,7 @@ namespace hs
         ~Hello() = default;
 
         void hello();
+        std::string getHello() const;
     };
 }
 

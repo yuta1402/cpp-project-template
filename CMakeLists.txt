@@ -23,7 +23,10 @@ add_subdirectory(${source_dir}/hs)
 
 add_executable(${target} ${source_dir}/main.cpp)
 
-target_link_libraries(${target} ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(${target}
+    ${CMAKE_THREAD_LIBS_INIT}
     hs
 )
+
+enable_testing()
+add_subdirectory("./test")
